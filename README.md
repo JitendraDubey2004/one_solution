@@ -1,65 +1,93 @@
-# one_solution: Full-Stack Flutter App
+# One_Solution: Full-Stack Flutter App
 
-This project is a full-stack mobile application developed for a coding assignment. It features a modern, clean UI built with Flutter and a robust RESTful API backend powered by Node.js and Express.js. The application is designed to help users submit various requests, such as booking a venue or planning a trip.
+**One_Solution** is a full-stack mobile application developed for a coding assignment. It features a clean and modern UI built with Flutter and a robust RESTful API backend powered by Node.js and Express.js. The app allows users to submit various requests, such as booking venues, planning trips, or exploring retail stores.
 
-#✨ Features
+---
 
-#Dynamic Home Screen: The home page displays a list of categories like "Banquets & Venues," "Travel & Stay" and "Retail stores & Shops" that are fetched dynamically from the backend API.
+## ✨ Features
 
-#Custom UI Elements: The app includes custom-designed UI components, such as a scroll-aware floating icon on the home page.
+- **Dynamic Home Screen:**  
+  Displays categories like "Banquets & Venues," "Travel & Stay," and "Retail Stores & Shops," fetched dynamically from the backend.
 
-#Cascading Dropdowns: The forms for "Banquets & Venues" and "Retail stores & Shops" feature cascading dropdowns for Country, State, and City, which are populated dynamically via API calls.
+- **Custom UI Elements:**  
+  Includes custom-designed components such as a scroll-aware floating action icon.
 
-#Form Submission: User-submitted data is sent to the backend and stored in a MongoDB Atlas database.
+- **Cascading Dropdowns:**  
+  Forms for "Banquets & Venues" and "Retail Stores & Shops" feature Country → State → City dropdowns, dynamically populated via API calls.
 
-#Modular Architecture: The project follows a "Feature-First" folder structure, making the codebase scalable, maintainable, and easy to collaborate on.
+- **Form Submission:**  
+  User-submitted data is stored in a MongoDB Atlas database through the backend API.
 
-# 🚀 Getting Started
-Follow these steps to set up and run the project on your local machine.
+- **Modular Architecture:**  
+  Feature-first folder structure ensures scalability, maintainability, and easy collaboration.
 
- Prerequisites
- Flutter SDK: Ensure you have Flutter installed.  
- 
- Node.js & npm: Ensure you have Node.js and npm installed.
- MongoDB Atlas Account: You will need a cloud-hosted database.
+---
 
- Installation
- 1. Clone the Repository
-     git clone https://github.com/YourUsername/your-repo-name.git
-     cd your-repo-name
-    
- 3. Set up the Backend
-     - Navigate to the one_solution_Backend directory using cd one_solution_Backend
-    
-     - Install dependencies: using npm install
-    
-     - Configure your database by creating a .env file in the one_solution_Backend folder and add your MongoDB Atlas connection string and server port.
-     Ensure your.env looks like this   
-        PORT=5000
-          MONGO_URI=mongodb+srv://<username>:<password>@<cluster-name>.mongodb.net/oneSolution?retryWrites=true&w=majority
-     - Run the backend server: using npm run dev
-   The server will start on http://localhost:5000.
- 4. Set up the Frontend
-    In a same  terminal, navigate to the one_solution_frontend directory using cd ../one_solution_frontend
-    Install dependencies: using flutter pub get
-    Run the app:
-     To run ensure your backend URL is running at correct place
-       If you  run on an Real device you can run the same code
-       If you  run on an Web/desktop replace https://ssquad-backend.onrender.com with http://localhost:5000 at every occurence
-       If you  run on an Android emulator replace https://ssquad-backend.onrender.com with http://172.16.123.89:5000 at every occurence
-     To run in Chrome, use the flutter run -d chrome --web-renderer html command to avoid CORS issues or you can also use flutter run
+## 🚀 Getting Started
 
-🛠️ Tools and Technology Stack
-    Frontend: Flutter, Dart, http package.
-    Backend: Node.js, Express.js (deployed on Render for live backend).
-    Database: MongoDB Atlas.
-    API Testing: Postman.
+Follow these steps to set up and run the project locally.
 
-📂 Folder Structure
-The project is organized using a feature-first approach to ensure a clean and scalable codebase.
+### Prerequisites
+- **Flutter SDK** – [Install Flutter](https://docs.flutter.dev/get-started/install)  
+- **Node.js & npm** – [Install Node.js](https://nodejs.org/)  
+- **MongoDB Atlas Account** – Cloud-hosted database
 
+---
+
+### Installation
+
+#### 1. Clone the Repository
+```bash
+git clone https://github.com/YourUsername/your-repo-name.git
+cd your-repo-name
+```
+
+#### 2. Set up the Backend
+```bash
+cd one_solution_Backend
+npm install
+```
+- Configure your database: create a `.env` file with the following:  
+```env
+PORT=5000
+MONGO_URI=mongodb+srv://<username>:<password>@<cluster-name>.mongodb.net/oneSolution?retryWrites=true&w=majority
+```
+- Run the backend server:
+```bash
+npm run dev
+```
+Server will start at `http://localhost:5000`.
+
+#### 3. Set up the Frontend
+```bash
+cd ../one_solution_frontend
+flutter pub get
+```
+- Run the app:  
+  - **Real Device:** Ensure backend URL is correct.  
+  - **Web/Desktop:** Replace `https://ssquad-backend.onrender.com` with `http://localhost:5000` in the code.  
+  - **Android Emulator:** Replace with `http://<your-local-IP>:5000`.  
+```bash
+flutter run -d chrome --web-renderer html   # for web (avoids CORS issues)
+flutter run                                # for mobile devices
+```
+
+---
+
+## 🛠️ Technology Stack
+
+- **Frontend:** Flutter, Dart, `http` package  
+- **Backend:** Node.js, Express.js (deployed on Render for live backend)  
+- **Database:** MongoDB Atlas  
+- **API Testing:** Postman
+
+---
+
+## 📂 Folder Structure
+
+```
 /One_Solution
-├── one_solution_frontend/                  # Flutter Frontend Part
+├── one_solution_frontend/                  # Flutter Frontend
 │   ├── android/
 │   ├── ios/
 │   ├── lib/
@@ -81,7 +109,7 @@ The project is organized using a feature-first approach to ensure a clean and sc
 │   │   └── main.dart
 │   └── pubspec.yaml
 │
-└── one_solution_Backend/          # Node.js Backend Part
+└── one_solution_Backend/          # Node.js Backend
     ├── src/
     │   ├── config/
     │   │   └── database.js
@@ -100,3 +128,5 @@ The project is organized using a feature-first approach to ensure a clean and sc
     ├── .env
     ├── package.json
     └── server.js
+```
+
