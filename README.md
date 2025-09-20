@@ -1,20 +1,20 @@
-one_solution: Full-Stack Flutter App
+# one_solution: Full-Stack Flutter App
 
 This project is a full-stack mobile application developed for a coding assignment. It features a modern, clean UI built with Flutter and a robust RESTful API backend powered by Node.js and Express.js. The application is designed to help users submit various requests, such as booking a venue or planning a trip.
 
-✨ Features
+#✨ Features
 
-Dynamic Home Screen: The home page displays a list of categories like "Banquets & Venues," "Travel & Stay" and "Retail stores & Shops" that are fetched dynamically from the backend API.
+#Dynamic Home Screen: The home page displays a list of categories like "Banquets & Venues," "Travel & Stay" and "Retail stores & Shops" that are fetched dynamically from the backend API.
 
-Custom UI Elements: The app includes custom-designed UI components, such as a scroll-aware floating icon on the home page.
+#Custom UI Elements: The app includes custom-designed UI components, such as a scroll-aware floating icon on the home page.
 
-Cascading Dropdowns: The forms for "Banquets & Venues" and "Retail stores & Shops" feature cascading dropdowns for Country, State, and City, which are populated dynamically via API calls.
+#Cascading Dropdowns: The forms for "Banquets & Venues" and "Retail stores & Shops" feature cascading dropdowns for Country, State, and City, which are populated dynamically via API calls.
 
-Form Submission: User-submitted data is sent to the backend and stored in a MongoDB Atlas database.
+#Form Submission: User-submitted data is sent to the backend and stored in a MongoDB Atlas database.
 
-Modular Architecture: The project follows a "Feature-First" folder structure, making the codebase scalable, maintainable, and easy to collaborate on.
+#Modular Architecture: The project follows a "Feature-First" folder structure, making the codebase scalable, maintainable, and easy to collaborate on.
 
-🚀 Getting Started
+# 🚀 Getting Started
 Follow these steps to set up and run the project on your local machine.
 
  Prerequisites
@@ -33,9 +33,9 @@ Follow these steps to set up and run the project on your local machine.
      - Install dependencies: using npm install
     
      - Configure your database by creating a .env file in the one_solution_Backend folder and add your MongoDB Atlas connection string and server port.
-     Ensure your.env looks like this
-      PORT=5000
-      MONGO_URI=mongodb+srv://<username>:<password>@<cluster-name>.mongodb.net/oneSolution?retryWrites=true&w=majority
+     Ensure your.env looks like this   
+        PORT=5000
+          MONGO_URI=mongodb+srv://<username>:<password>@<cluster-name>.mongodb.net/oneSolution?retryWrites=true&w=majority
      - Run the backend server: using npm run dev
    The server will start on http://localhost:5000.
  5. Set up the Frontend
