@@ -7,6 +7,7 @@ This project is a full-stack mobile application developed for a coding assignmen
 Dynamic Home Screen: The home page displays a list of categories like "Banquets & Venues," "Travel & Stay" and "Retail stores & Shops" that are fetched dynamically from the backend API.
 
 Custom UI Elements: The app includes custom-designed UI components, such as a scroll-aware floating icon on the home page.
+
 Cascading Dropdowns: The forms for "Banquets & Venues" and "Retail stores & Shops" feature cascading dropdowns for Country, State, and City, which are populated dynamically via API calls.
 
 Form Submission: User-submitted data is sent to the backend and stored in a MongoDB Atlas database.
