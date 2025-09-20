@@ -7,7 +7,7 @@
 ## ✨ Features
 
 - **Dynamic Home Screen:**  
-  Displays categories like "Banquets & Venues," "Travel & Stay," and "Retail Stores & Shops," fetched dynamically from the backend.
+  Displays categories like "Banquets & Venues," "Travel & Stay" and "Retail Stores & Shops," fetched dynamically from the backend.
 
 - **Custom UI Elements:**  
   Includes custom-designed components such as a scroll-aware floating action icon.
@@ -69,7 +69,7 @@ flutter pub get
   - **Android Emulator:** Replace with `http://<your-local-IP>:5000`.  
 ```bash
 flutter run -d chrome --web-renderer html   # for web (avoids CORS issues)
-flutter run                                # for mobile devices
+flutter run                                
 ```
 
 ---
