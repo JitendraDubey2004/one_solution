@@ -1,4 +1,4 @@
-One Solution: Full-Stack Flutter App
+one_solution: Full-Stack Flutter App
 This project is a full-stack mobile application developed for a coding assignment. It features a modern, clean UI built with Flutter and a robust RESTful API backend powered by Node.js and Express.js. The application is designed to help users submit various requests, such as booking a venue or planning a trip.
 
 ✨ Features
