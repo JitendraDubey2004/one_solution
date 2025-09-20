@@ -39,7 +39,7 @@ Follow these steps to set up and run the project on your local machine.
           MONGO_URI=mongodb+srv://<username>:<password>@<cluster-name>.mongodb.net/oneSolution?retryWrites=true&w=majority
      - Run the backend server: using npm run dev
    The server will start on http://localhost:5000.
- 5. Set up the Frontend
+ 4. Set up the Frontend
     In a same  terminal, navigate to the one_solution_frontend directory using cd ../one_solution_frontend
     Install dependencies: using flutter pub get
     Run the app:
