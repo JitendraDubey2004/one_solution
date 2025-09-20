@@ -26,16 +26,19 @@ Follow these steps to set up and run the project on your local machine.
  1. Clone the Repository
      git clone https://github.com/YourUsername/your-repo-name.git
      cd your-repo-name
- 2. Set up the Backend
-     Navigate to the one_solution_Backend directory using cd one_solution_Backend
-     Install dependencies: using npm install
-     Configure your database by creating a .env file in the one_solution_Backend folder and add your MongoDB Atlas connection string and server port.
-     # .env
-     PORT=5000
-     MONGO_URI=mongodb+srv://<username>:<password>@<cluster-name>.mongodb.net/oneSolution?retryWrites=true&w=majority
-     Run the backend server: using npm run dev
+    
+ 3. Set up the Backend
+     - Navigate to the one_solution_Backend directory using cd one_solution_Backend
+    
+     - Install dependencies: using npm install
+    
+     - Configure your database by creating a .env file in the one_solution_Backend folder and add your MongoDB Atlas connection string and server port.
+     Ensure your.env looks like this
+      PORT=5000
+      MONGO_URI=mongodb+srv://<username>:<password>@<cluster-name>.mongodb.net/oneSolution?retryWrites=true&w=majority
+     - Run the backend server: using npm run dev
    The server will start on http://localhost:5000.
- 3. Set up the Frontend
+ 5. Set up the Frontend
     In a same  terminal, navigate to the one_solution_frontend directory using cd ../one_solution_frontend
     Install dependencies: using flutter pub get
     Run the app:
