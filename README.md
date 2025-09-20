@@ -18,7 +18,8 @@ This project is a full-stack mobile application developed for a coding assignmen
 Follow these steps to set up and run the project on your local machine.
 
  Prerequisites
- Flutter SDK: Ensure you have Flutter installed.
+ Flutter SDK: Ensure you have Flutter installed.  
+ 
  Node.js & npm: Ensure you have Node.js and npm installed.
  MongoDB Atlas Account: You will need a cloud-hosted database.
 
